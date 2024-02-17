@@ -1,0 +1,90 @@
+<odoo>
+  <data>
+
+    <!-- Top Menus -->
+   <record id='instituto_alumno_action' model='ir.actions.act_window'>
+        <field name="name">Biblioteca de Alumnos</field>
+        <field name="res_model">instituto.alumno</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record id='instituto_profesor_action' model='ir.actions.act_window'>
+        <field name="name">Biblioteca de Profesores</field>
+        <field name="res_model">instituto.profesor</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record id='instituto_ciclo_action' model='ir.actions.act_window'>
+        <field name="name">Biblioteca de Ciclos Formativos</field>
+        <field name="res_model">instituto.ciclo</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record id='instituto_modulo_action' model='ir.actions.act_window'>
+        <field name="name">Biblioteca de Módulos</field>
+        <field name="res_model">instituto.modulo</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- Botones Menuitem -->
+    <menuitem name="Mi Instituto" id="instituto_base_menu" />
+    <menuitem name="Alumnos" id="instituto_alumno_menu" parent="instituto_base_menu" action="instituto_alumno_action"/>
+    <menuitem name="Profesores" id="instituto_profesor_menu" parent="instituto_base_menu" action="instituto_profesor_action"/>
+    <menuitem name="Ciclos Formativos" id="instituto_ciclo_menu" parent="instituto_base_menu" action="instituto_ciclo_action"/>
+    <menuitem name="Módulos" id="instituto_modulo_menu" parent="instituto_base_menu" action="instituto_modulo_action"/>
+
+
+    <!-- Ya aqui si de verdad las vistas-->
+    <record id="view_instituto_alumno_tree" model="ir.ui.view">
+        <field name="name">Lista de Alumnos</field>
+        <field name="model">instituto.alumno</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="apellidos"/>
+                <field name="idModulo"/>
+            </tree>
+        </field>
+    </record>
+
+    
+
+    <record id="view_instituto_profesor_tree" model="ir.ui.view">
+        <field name="name">Lista de Profesores</field>
+        <field name="model">instituto.profesor</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="apellidos"/>
+                <field name="idModulo"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_instituto_ciclo_tree" model="ir.ui.view">
+        <field name="name">Lista de Ciclos Formativos</field>
+        <field name="model">instituto.ciclo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombreCiclo"/>
+                <field name="descripcionCiclo"/>
+                <field name="idModulo"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_instituto_modulo_tree" model="ir.ui.view">
+        <field name="name">Lista de Módulos</field>
+        <field name="model">instituto.modulo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombreModulo"/>
+                <field name="idCiclo"/>
+                <field name="idAlumno"/>
+                <field name="idProfesor"/>
+            </tree>
+        </field>
+    </record>
+
+  </data>
+</odoo>
