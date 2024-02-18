@@ -3,4 +3,5 @@
 # Si creamos mas modelos, deben importarse en este fichero
 from . import instituto_alumno
 from . import instituto_profesor
-from . import clinica_diagnostico
+from . import instituto_ciclo
+from . import instituto_modulo
