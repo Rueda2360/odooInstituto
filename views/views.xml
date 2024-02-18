@@ -11,19 +11,19 @@
     <record id='instituto_profesor_action' model='ir.actions.act_window'>
         <field name="name">Biblioteca de Profesores</field>
         <field name="res_model">instituto.profesor</field>
-        <field name="view_mode">tree</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <record id='instituto_ciclo_action' model='ir.actions.act_window'>
         <field name="name">Biblioteca de Ciclos Formativos</field>
         <field name="res_model">instituto.ciclo</field>
-        <field name="view_mode">tree</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <record id='instituto_modulo_action' model='ir.actions.act_window'>
         <field name="name">Biblioteca de Módulos</field>
         <field name="res_model">instituto.modulo</field>
-        <field name="view_mode">tree</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <!-- Botones Menuitem -->
@@ -46,16 +46,6 @@
         </field>
     </record>
 
-    <record id="view_instituto_alumno_form" model="ir.ui.view">
-     <field name="name">Formulario de Alumno</field>
-     <field name="model">instituto.alumno</field>
-     <field name="arch" type="xml">
-         <form>
-            <field name="nombre"/>
-                <field name="apellidos"/>
-         </form>
-     </field>
- </record>
 
     <record id="view_instituto_profesor_tree" model="ir.ui.view">
         <field name="name">Lista de Profesores</field>
