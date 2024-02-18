@@ -77,7 +77,7 @@
                 <field name="nombreModulo"/>
                 <field name="idCiclo"/>
                 <field name="idAlumno"/>
-                <field name="idProfesor"/>
+                <field name="idProfesor"/>     
             </tree>
         </field>
     </record>

@@ -12,7 +12,7 @@ class InstitutoAlumno(models.Model):
     apellidos = fields.Char('Apellido', required=True)
 
     #Esto puede dar problemas
-    idModulo = fields.Many2many('instituto.modulo', string='Módulos Matriculados')
+#    idModulo = fields.Many2many('instituto.modulo', string='Módulos Matriculados')
 
 
 

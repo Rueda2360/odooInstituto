@@ -13,7 +13,7 @@ class InstitutoProfesor(models.Model):
     apellidos = fields.Char('Apellido', required=True)
 
     #Esto puede dar problemas
-    idModulo = fields.Many2many('instituto.modulo', string='Módulos Impartidos')
+#    idModulo = fields.Many2many('instituto.modulo', string='Módulos Impartidos')
 
 
     nombreCompleto = fields.Char('Nombre Completo', compute='_compute_nombre_completo', store=True)

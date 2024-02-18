@@ -12,8 +12,8 @@ class InstitutoModulo(models.Model):
     nombreModulo = fields.Char('Nombre del Módulo')
 
     #Relaciones
-    idCiclo = fields.Many2one('mi_modulo.ciclo_formativo', string='Ciclo Formativo')
-    idAlumno = fields.Many2many('mi_modulo.alumno', string='Alumnos Matriculados')
-    idProfesor = fields.Many2one('mi_modulo.profesor', string='Profesor que Imparte')
+    idCiclo = fields.Many2one('instituto.ciclo_formativo', string='Ciclo Formativo', required=True)
+    idAlumno = fields.Many2many('instituto.alumno', string='Alumnos Matriculados', required=True)
+    idProfesor = fields.Many2one('instituto.profesor', string='Profesor que Imparte', required=True)
 
 
