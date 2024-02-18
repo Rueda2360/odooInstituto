@@ -13,5 +13,5 @@ class InstitutoCiclo(models.Model):
     descripcionCiclo = fields.Char('Descripción', required=True)
     
     #Esto puede dar problemas
-    idModulo = fields.One2many('instituto.modulo', 'idCiclo', 'Módulos')
+    #idModulo = fields.One2many('instituto.modulo', 'idCiclo', 'Módulos')
 
