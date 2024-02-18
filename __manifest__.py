@@ -31,6 +31,7 @@
         'security/ir.model.access.csv',
         #Cargamos las vistas y las plantillas
         'views/views.xml',
+        'security/groups.xml',
     ]
 }
 
