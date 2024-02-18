@@ -2,16 +2,11 @@
 <odoo>
 
     <record id="group_director" model="res.groups">
-        <field name="name">Group Director</field>
-        <field name="users" eval="[(4, ref('group_director'))]"/>
+        <field name="name">director</field>
     </record>
-
-
 
     <record id="group_profesor" model="res.groups">
-        <field name="name">Group Profesor: Profesor</field>
-        <field name="users" eval="[(4, ref('group_profesor'))]"/>
+        <field name="name">profesor</field>
     </record>
-
 
 </odoo>

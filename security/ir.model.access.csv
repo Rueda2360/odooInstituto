@@ -2,9 +2,9 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
 
 
-acl_director_alumno,instituto.alumno,model_instituto_alumno,group_director,1,1,1,1
-acl_director_profesor,instituto.profesor,model_instituto_profesor,group_director,1,1,1,1
-acl_director_ciclo,instituto.ciclo,model_instituto_ciclo,group_director,1,1,1,1
-acl_director_modulo,instituto.alumno,model_instituto_modulo,group_director,1,1,1,1
+acl_director_alumno,instituto.alumno,model_instituto_alumno,director,1,1,1,1
+acl_director_profesor,instituto.profesor,model_instituto_profesor,director,1,1,1,1
+acl_director_ciclo,instituto.ciclo,model_instituto_ciclo,director,1,1,1,1
+acl_director_modulo,instituto.alumno,model_instituto_modulo,director,1,1,1,1
 
-acl_profesor,instituto.profesor,model_instituto_profesor,group_profesor,1,0,0,0
+acl_profesor,instituto.profesor,model_instituto_profesor,profesor,1,0,0,0
